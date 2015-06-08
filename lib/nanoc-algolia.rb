@@ -3,7 +3,7 @@ require 'algoliasearch'
 require 'nokogiri'
 
 class SearchFilter < Nanoc::Filter
-  identifier :search
+  identifier :algolia
   type :text
 
   def initialize(hash = {})
