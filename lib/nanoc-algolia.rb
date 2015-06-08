@@ -38,8 +38,8 @@ class SearchFilter < Nanoc::Filter
 
     @index.save_object(
       {
-        text: => page_text,
-        title: => @item[:title] || item.identifier
+        text: page_text,
+        title: @item[:title] || item.identifier
       }, item.identifer)
     puts 'Indexed ' << item.identifier
 
