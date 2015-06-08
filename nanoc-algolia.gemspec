@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name             = "nanoc-algolia"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.date             = Time.now.utc.strftime("%Y-%m-%d")
   s.homepage         = "https://github.com/stormz/nanoc-algolia"
   s.authors          = "François de Metz"
