@@ -9,6 +9,7 @@ class SearchFilter < Nanoc::Filter
   def initialize(hash = {})
     super
 
+    raise ArgumentError.new 'Missing algolia config' unless @config[:algolia]
     raise ArgumentError.new 'Missing algolia:application_id' unless @config[:algolia][:application_id]
     raise ArgumentError.new 'Missing algolia:api_key' unless @config[:algolia][:api_key]
     raise ArgumentError.new 'Missing algolia:index' unless @config[:algolia][:index]
