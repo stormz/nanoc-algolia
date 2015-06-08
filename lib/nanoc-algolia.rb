@@ -41,7 +41,7 @@ class SearchFilter < Nanoc::Filter
       {
         text: page_text,
         title: @item[:title] || item.identifier
-      }, item.identifer)
+      }, item.identifier)
     puts 'Indexed ' << item.identifier
 
     @last_indexed = Time.now
